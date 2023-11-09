@@ -2,9 +2,10 @@ import { User } from "./user";
 
 export interface IProfile {
     username: string;
-    displayName: string;
+    displayName?: string;
     image?: string;
     bio?: string;
+    photos?: Photo[]
 }
 
 export class Profile implements IProfile {
@@ -15,7 +16,14 @@ export class Profile implements IProfile {
     }
 
     username: string;
-    displayName: string;
+    displayName?: string;
     image?: string;
     bio?: string;
+    photos?: Photo[]
+}
+
+export interface Photo {
+    id: string;
+    url: string;
+    isMain: boolean;
 }

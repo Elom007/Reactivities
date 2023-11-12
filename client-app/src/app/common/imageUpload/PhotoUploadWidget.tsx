@@ -2,7 +2,7 @@ import { Button, Grid, Header, Image } from "semantic-ui-react";
 import PhotoWidgetDropzone from "./PhotoWidgetDropzone";
 import { useEffect, useState } from "react";
 import PhotoWidgetCropper from "./PhotoWidgetCropper";
-import { observer } from "mobx-react-lite";
+// import { observer } from "mobx-react-lite";
 
 interface Props {
     loading: boolean;

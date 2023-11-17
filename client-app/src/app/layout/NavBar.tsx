@@ -9,13 +9,13 @@ export default observer(function NavBar() {
         <Menu inverted fixed='top'>
             <Container>
                 <Menu.Item as={NavLink} to='/' header>
-                    <img src="/assets/logo.png" alt="logo" style={{marginRight: '20px'}}/>
-                    Reactivities
+                    <img src="/assets/test.png" alt="logo" style={{marginRight: '20px'}}/>
+                    Home
                 </Menu.Item>
-                <Menu.Item as={NavLink} to='/activities' name='Activities'/>
+                <Menu.Item as={NavLink} to='/activities' name='Events'/>
                 <Menu.Item as={NavLink} to='/errors' name='Errors'/>
                 <Menu.Item>
-                    <Button as={NavLink} to='/createActivity' positive content='Create Activity'/>
+                    <Button as={NavLink} to='/createActivity' positive content='Create Event'/>
                 </Menu.Item>
                 <Menu.Item position="right">
                     <Image src={user?.image || '/assets/user.png'} avatar spaced="right"/>
